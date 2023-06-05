@@ -1,3 +1,3 @@
-raise ValueError("input base must be >= 2")
-
-print(rotate("Let's eat, Grandma!",21))
+x = "Hello World"
+y = [i.replace("Hello","Goodbye") for i in x.split()]
+print(y)

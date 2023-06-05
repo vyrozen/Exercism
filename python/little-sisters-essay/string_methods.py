@@ -7,8 +7,9 @@ def capitalize_title(title):
     :param title: str - title string that needs title casing.
     :return: str - title string in title case (first letters capitalized).
     """
-
-    pass
+    x = (" ").join([i.capitalize() for i in title.split()])
+    return x
+    
 
 
 def check_sentence_ending(sentence):
@@ -17,8 +18,9 @@ def check_sentence_ending(sentence):
     :param sentence: str - a sentence to check.
     :return: bool - return True if punctuated correctly with period, False otherwise.
     """
-
-    pass
+    
+    return sentence[-1] == "."
+    
 
 
 def clean_up_spacing(sentence):
@@ -27,8 +29,8 @@ def clean_up_spacing(sentence):
     :param sentence: str - a sentence to clean of leading and trailing space characters.
     :return: str - a sentence that has been cleaned of leading and trailing space characters.
     """
-
-    pass
+    return (" ").join(sentence.split())
+    
 
 
 def replace_word_choice(sentence, old_word, new_word):
@@ -39,5 +41,6 @@ def replace_word_choice(sentence, old_word, new_word):
     :param new_word: str - replacement word.
     :return: str - input sentence with new words in place of old words.
     """
-
+    x = (" ").join([i.replace(old_word, new_word) for i in sentence.split()])
+    return x
     pass
